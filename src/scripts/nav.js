@@ -1,3 +1,4 @@
+const { home, recipes, contact } = require('./navLinks');
 function navbar() {
   const header = document.createElement('header');
   const nav = document.createElement('nav');
@@ -10,18 +11,9 @@ function navbar() {
   navbarBrand.textContent = 'Saj Al-Reef';
   const navList = document.createElement('ul');
   navList.className = 'd-flex';
-  for (let i = 0; i < 3; i++) {
-    let navLink = document.createElement('a');
-    navLink.className = 'nav-link';
-    if (i == 0) {
-      navLink.textContent = 'Home';
-    } else if (i == 1) {
-      navLink.textContent = 'Recipes';
-    } else {
-      navLink.textContent = 'Contact Us';
-    }
-    navList.appendChild(navLink);
-  }
+  navList.appendChild(home);
+  navList.appendChild(recipes);
+  navList.appendChild(contact);
 
   container.appendChild(navbarBrand);
   container.appendChild(navList);
