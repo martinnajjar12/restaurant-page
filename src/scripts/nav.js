@@ -22,4 +22,4 @@ function navbar() {
   return header;
 }
 
-module.exports = navbar;
+module.exports = navbar();

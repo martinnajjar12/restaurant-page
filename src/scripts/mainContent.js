@@ -40,4 +40,4 @@ function mainContent() {
   return main;
 }
 
-module.exports = mainContent;
+module.exports = mainContent();

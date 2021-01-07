@@ -2,6 +2,10 @@ body {
   background-color: #ebebeb;
 }
 
+.container {
+  max-width: 900px;
+}
+
 .row {
   --bs-gutter-x: 0;
 }
