@@ -1,0 +1,1 @@
+(()=>{var e=document.createElement("div");e.textContent="Hello again",document.body.appendChild(e)})();
