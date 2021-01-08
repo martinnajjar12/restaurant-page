@@ -1,6 +1,7 @@
 const navbar = require('./nav');
 const homePage = require('./mainContent');
 const recipesPage = require('./recipesPage');
+const contactPage = require('./contactPage');
 const { home, recipes, contact } = require('./navLinks');
 require('../css/styles.css');
 

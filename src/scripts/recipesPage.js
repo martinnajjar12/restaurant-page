@@ -1,10 +1,14 @@
 function recipesPage() {
   const container = document.createElement('div');
-  container.className = 'container text-center';
+  container.className = 'container text-center text-white';
+  const bgDiv = document.createElement('div');
+  bgDiv.className = 'setBg';
+  const transparentDiv = document.createElement('div');
+  transparentDiv.className = 'trptDiv';
 
   const sandwiches = document.createElement('h2');
   sandwiches.textContent = 'Saj Sandwiches';
-  sandwiches.className = 'mt-5';
+  sandwiches.className = 'pt-5';
 
   const row = document.createElement('div');
   row.className = 'row';
@@ -15,7 +19,7 @@ function recipesPage() {
     let innerDiv = document.createElement('div');
     let heading = document.createElement('h4');
     let paragraph = document.createElement('p');
-    paragraph.className = 'text-muted';
+    paragraph.className = 'text-color';
 
     if (i == 0) {
       heading.textContent = 'Special Thyme Saj';
@@ -35,8 +39,10 @@ function recipesPage() {
     column.appendChild(innerDiv);
     row.appendChild(column);
   }
-  container.appendChild(sandwiches);
-  container.appendChild(row);
+  transparentDiv.appendChild(sandwiches);
+  transparentDiv.appendChild(row);
+  bgDiv.appendChild(transparentDiv);
+  container.appendChild(bgDiv);
 
   return container;
 }

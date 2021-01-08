@@ -6,6 +6,29 @@ body {
   max-width: 900px;
 }
 
+.text-color {
+  color: #420303;
+}
+
+.setBg {
+  background-image: url(../imgs/recipesBg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.trptDiv {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.2);
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .row {
   --bs-gutter-x: 0;
 }
