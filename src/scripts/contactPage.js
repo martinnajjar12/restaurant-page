@@ -9,12 +9,12 @@ function contactPage() {
   submit.className = 'btn btn-primary';
   submit.textContent = 'Submit';
   const form = document.createElement('form');
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i += 1) {
     const wrapper = document.createElement('div');
     wrapper.className = 'mb-3';
     const label = document.createElement('label');
     label.className = 'form-label';
-    if (i == 0) {
+    if (i === 0) {
       label.setAttribute('for', 'email');
       label.textContent = 'Eamil adress';
       const emailField = document.createElement('input');

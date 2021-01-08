@@ -13,21 +13,21 @@ function recipesPage() {
   const row = document.createElement('div');
   row.className = 'row';
 
-  for (let i = 0; i < 4; i++) {
-    let column = document.createElement('div');
+  for (let i = 0; i < 4; i += 1) {
+    const column = document.createElement('div');
     column.className = 'col-6 p-4';
-    let innerDiv = document.createElement('div');
-    let heading = document.createElement('h4');
-    let paragraph = document.createElement('p');
+    const innerDiv = document.createElement('div');
+    const heading = document.createElement('h4');
+    const paragraph = document.createElement('p');
     paragraph.className = 'text-color';
 
-    if (i == 0) {
+    if (i === 0) {
       heading.textContent = 'Special Thyme Saj';
       paragraph.textContent = 'Thyme, Tomatoes, Olive Oil, and Cheese.';
-    } else if (i == 1) {
+    } else if (i === 1) {
       heading.textContent = 'Thyme and Cheese Saj';
       paragraph.textContent = 'Thyme, Olive Oil, and Mozzarella Cheese.';
-    } else if (i == 2) {
+    } else if (i === 2) {
       heading.textContent = 'Omelet Saj';
       paragraph.textContent = 'Two Egg Omelet, Mayo, and French Fries.';
     } else {

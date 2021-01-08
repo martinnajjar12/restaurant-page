@@ -1,4 +1,5 @@
 const { home, recipes, contact } = require('./navLinks');
+
 function navbar() {
   const header = document.createElement('header');
   const nav = document.createElement('nav');

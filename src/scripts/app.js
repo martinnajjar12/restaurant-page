@@ -11,10 +11,6 @@ const dynamicData = document.createElement('div');
 dynamicData.appendChild(homePage);
 content.appendChild(dynamicData);
 
-home.addEventListener('click', visitHome);
-recipes.addEventListener('click', visitRecipes);
-contact.addEventListener('click', visitContact);
-
 function visitHome() {
   dynamicData.innerHTML = '';
   dynamicData.appendChild(homePage);
@@ -29,3 +25,7 @@ function visitContact() {
   dynamicData.innerHTML = '';
   dynamicData.appendChild(contactPage);
 }
+
+home.addEventListener('click', visitHome);
+recipes.addEventListener('click', visitRecipes);
+contact.addEventListener('click', visitContact);
