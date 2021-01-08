@@ -1,6 +1,6 @@
 const { home, recipes, contact } = require('./navLinks');
 
-function navbar() {
+const navbar = () => {
   const header = document.createElement('header');
   const nav = document.createElement('nav');
   nav.className = 'navbar navbar-expand-lg navbar-light bg-light';
@@ -21,6 +21,6 @@ function navbar() {
   nav.appendChild(container);
   header.appendChild(nav);
   return header;
-}
+};
 
 module.exports = navbar();

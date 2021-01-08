@@ -1,9 +1,9 @@
-const navbar = require('./nav');
-const homePage = require('./mainContent');
-const recipesPage = require('./recipesPage');
-const contactPage = require('./contactPage');
-const { home, recipes, contact } = require('./navLinks');
-require('../css/styles.css');
+const navbar = require('./scripts/nav');
+const homePage = require('./scripts/mainContent');
+const recipesPage = require('./scripts/recipesPage');
+const contactPage = require('./scripts/contactPage');
+const { home, recipes, contact } = require('./scripts/navLinks');
+require('./css/styles.css');
 
 const content = document.querySelector('#content');
 content.appendChild(navbar);

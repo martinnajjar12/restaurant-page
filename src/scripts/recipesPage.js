@@ -1,4 +1,4 @@
-function recipesPage() {
+const recipesPage = () => {
   const container = document.createElement('div');
   container.className = 'container text-center text-white';
   const bgDiv = document.createElement('div');
@@ -45,6 +45,6 @@ function recipesPage() {
   container.appendChild(bgDiv);
 
   return container;
-}
+};
 
 module.exports = recipesPage();

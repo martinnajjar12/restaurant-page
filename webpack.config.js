@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/scripts/app.js',
+  entry: './src/app.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -31,8 +31,7 @@ module.exports = {
           {
             loader: 'image-webpack-loader',
             options: {
-              // bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
+              disable: true,
             },
           },
         ],

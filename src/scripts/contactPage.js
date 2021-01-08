@@ -1,4 +1,4 @@
-function contactPage() {
+const contactPage = () => {
   const container = document.createElement('div');
   container.className = 'container mt-5';
   const heading = document.createElement('h2');
@@ -41,6 +41,6 @@ function contactPage() {
   container.appendChild(form);
 
   return container;
-}
+};
 
 module.exports = contactPage();

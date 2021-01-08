@@ -1,4 +1,4 @@
-function mainContent() {
+const mainContent = () => {
   const main = document.createElement('main');
   main.className = 'container row mx-auto';
   for (let i = 0; i < 4; i += 1) {
@@ -38,6 +38,6 @@ function mainContent() {
     }
   }
   return main;
-}
+};
 
 module.exports = mainContent();

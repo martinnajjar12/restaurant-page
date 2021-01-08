@@ -1,4 +1,4 @@
-function navLinks() {
+const navLinks = () => {
   const home = document.createElement('a');
   home.className = 'nav-link';
   home.textContent = 'Home';
@@ -12,6 +12,6 @@ function navLinks() {
   contact.textContent = 'Contact Us';
 
   return { home, recipes, contact };
-}
+};
 
 module.exports = navLinks();
